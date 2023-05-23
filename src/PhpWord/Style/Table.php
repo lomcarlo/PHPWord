@@ -267,14 +267,13 @@ class Table extends Border
      */
     public function setBorderSize($value = null)
     {
-        if($value!=0){
-            $this->setBorderTopSize($value);
-            $this->setBorderLeftSize($value);
-            $this->setBorderRightSize($value);
-            $this->setBorderBottomSize($value);
-            $this->setBorderInsideHSize($value);
-            $this->setBorderInsideVSize($value);
-        }
+        $this->setBorderTopSize($value);
+        $this->setBorderLeftSize($value);
+        $this->setBorderRightSize($value);
+        $this->setBorderBottomSize($value);
+        $this->setBorderInsideHSize($value);
+        $this->setBorderInsideVSize($value);
+
         return $this;
     }
 
