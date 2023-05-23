@@ -422,7 +422,9 @@ class Html
         $attributes = $node->attributes;
         if ($attributes->getNamedItem('border') !== null) {
             $border = (int) $attributes->getNamedItem('border')->value;
-            $newElement->getStyle()->setBorderSize(Converter::pixelToTwip($border));
+            if($border != 0){
+                $newElement->getStyle()->setBorderSize(Converter::pixelToTwip($border));
+            }
         }else{
             $newElement->getStyle()->setBorderSize(0);
         }
