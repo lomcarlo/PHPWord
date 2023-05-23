@@ -425,8 +425,6 @@ class Html
             if($border != 0){
                 $newElement->getStyle()->setBorderSize(Converter::pixelToTwip($border));
             }
-        }else{
-            $newElement->getStyle()->setBorderSize(0);
         }
 
         return $newElement;
