@@ -79,6 +79,34 @@ $html .= '<table align="center" style="width: 50%;">
                     <tr><td>This is <b>bold</b> text</td><td></td><td>6</td></tr>
                 </tbody>
             </table>';
+$html .= '<p style="margin-top: 240pt;">A table with border 0:</p>';
+$html .= '<table align="center" border="0" style="width: 50%;">
+                <thead>
+                    <tr>
+                        <th>header a</th>
+                        <th>header          b</th>
+                        <th><span style="background-color: #00FF00;">header c</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="border-style: dotted; border-color: #FF0000">1</td><td colspan="2">2</td></tr>
+                    <tr><td>This is <b>bold</b> text</td><td></td><td>6</td></tr>
+                </tbody>
+            </table>';
+$html .= '<p style="margin-top: 240pt;">A table with style border 0:</p>';
+$html .= '<table align="center" style="width: 50%;border:0;">
+                <thead>
+                    <tr>
+                        <th>header a</th>
+                        <th>header          b</th>
+                        <th><span style="background-color: #00FF00;">header c</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="border-style: dotted; border-color: #FF0000">1</td><td colspan="2">2</td></tr>
+                    <tr><td>This is <b>bold</b> text</td><td></td><td>6</td></tr>
+                </tbody>
+            </table>';
 $html .= '<p style="margin-top: 240pt;">A table with formatting:</p>';
 $html .= '<table align="center" style="width: 50%; border: 6px #0000FF double;">
                 <thead>
